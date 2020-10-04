@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=0
+y=1
+a=[]
+b=[]
+steps=10
+for n in range(steps):
+    y=1.1*y-0.2*x/y
+    x=x+0.1
+    a.append(x)
+    b.append(y)
+print(a)
+print(b)
+fig=plt.figure()
+plt.plot(a,b,'r-s')
+plt.show()
